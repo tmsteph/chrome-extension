@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Popup</title>
+    <style>
+        body {
+            padding: 10px;
+            width: 200px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #message {
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Extension</h1>
+    <button id="clickMe">Click Me!</button>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('clickMe').addEventListener('click', function() {
+            document.getElementById('message').textContent = "Hello from your extension!";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "My Cool Extension",
+    "version": "1.0",
+    "description": "A brief description",
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": { "128": "icon_128.png" },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["script.js"]
+      }
+    ]
+  }
+  
